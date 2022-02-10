@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import s from './User.module.css';
+import s from '../User/User.module.css';
 
 export default function User(props){
 const {name,
