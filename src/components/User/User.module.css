@@ -1,0 +1,75 @@
+.profile {
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+   /* padding-top: 30px; */
+    width: 600px;
+    height: auto;
+      }
+  
+  .description {
+    display: flex;
+    flex-direction: column;
+    }
+  
+  .avatar {
+    display: block;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    overflow: hidden;
+    }
+  
+  .name {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.22;
+    letter-spacing: 0.03em;
+  }
+  
+  .tag {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 1.22;
+    letter-spacing: 0.03em;
+  }
+  
+  .location {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.03em;
+  }
+  
+  .stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    height: 50px;
+  }
+  
+  .stats > li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 50px;
+    width: 200px;
+    border: 1px solid rgb(35, 151, 12);
+    }

@@ -4,6 +4,8 @@ import items from './components/Statistics/data.json';
 import StatsList from './components/Statistics/StatsList'
 import FriendsList from 'components/Friends/FriendsList';
 import friends from './components/Friends/friends.json';
+import TransactionTable from 'components/Transactions/TransactionTabel';
+import transactions from './components/Transactions/transactions.json';
 
 export default function App(){
     return (
@@ -19,6 +21,7 @@ urlUser={users.avatar}
 />
 <StatsList title="Upload stats" items={items} />
 <FriendsList friends={friends}/>
+<TransactionTable transactions={transactions}/>
     </div>
     );
 

@@ -1,10 +1,13 @@
 import Statistics from "./Statistics";
+import propTypes from "prop-types";
+import s from './Statistics.module.css';
 
 
 export default function StatsList({ items, title} ) {
-   return( <section >
-    {title && <h2 >{title}</h2>}
-    <ul class="stat-list">
+   return( 
+   <section className={s.statistics} >
+    {title && <h2 className={s.title}>{title}</h2>}
+    <ul className={s.statsList}>
         {items.map (item =>(
            
                <Statistics
@@ -18,6 +21,14 @@ export default function StatsList({ items, title} ) {
   </ul>
   </section>
    );
-}
+} 
    
-
+//========================== propTypes ===================
+Statistics.propTypes = {
+   title: propTypes.string,
+   items: propTypes.arrayOf(
+     propTypes.shape({
+       id: propTypes.string.isRequired,
+     }),
+   ),
+ };
