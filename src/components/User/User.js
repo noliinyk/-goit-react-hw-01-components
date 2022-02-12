@@ -15,15 +15,15 @@ export default function User(props) {
       <ul className={s.stats}>
         <li>
           <span className={s.label}>Followers</span>
-          <span className={s.quantity}>{stats.quantityFollowers}</span>
+          <span className={s.quantity}>{stats.followers}</span>
         </li>
         <li>
           <span className={s.label}>Views</span>
-          <span className={s.quantity}>{stats.quantityViews}</span>
+          <span className={s.quantity}>{stats.views}</span>
         </li>
         <li>
           <span className={s.label}>Likes</span>
-          <span className={s.quantity}>{stats.quantityLikes}</span>
+          <span className={s.quantity}>{stats.likes}</span>
         </li>
       </ul>
     </div>
@@ -32,9 +32,9 @@ export default function User(props) {
 
 User.propTypes = {
   name: PropTypes.string,
-  quantityFollowers: PropTypes.number,
-  quantityViews: PropTypes.number,
-  quantityLikes: PropTypes.number,
+  followers: PropTypes.number,
+  views: PropTypes.number,
+  likes: PropTypes.number,
   tag: PropTypes.string,
   location: PropTypes.string,
   urlUser: PropTypes.string,
